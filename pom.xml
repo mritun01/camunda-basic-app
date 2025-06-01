@@ -5,8 +5,8 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>camunda-spring-boot-app</artifactId>
+    <groupId>com.mritun.bpm</groupId>
+    <artifactId>camunda-basic-app</artifactId>
     <version>1.0.0</version>
     <packaging>war</packaging>
 
@@ -34,7 +34,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
+            <!-- <scope>provided</scope> -->
         </dependency>
 
         <!-- Camunda BPM Spring Boot Starter -->
@@ -57,6 +57,25 @@
             <groupId>org.camunda.bpm.springboot</groupId>
             <artifactId>camunda-bpm-spring-boot-starter-rest</artifactId>
             <version>${camunda.version}</version>
+        </dependency>
+
+        <!-- Spring Boot JDBC Starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <!-- H2 Database for development -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Spring Boot Test Starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

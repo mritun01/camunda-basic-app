@@ -1,0 +1,33 @@
+# Maven target directory
+/target/
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+
+# Logs
+*.log
+
+# Compiled class files
+*.class
+
+# Package files
+*.war
+*.jar
+*.ear
+
+# H2 database files
+*.mv.db
+*.h2.db
+
+# Test reports
+surefire-reports/
+
+# Other
+*.swp
